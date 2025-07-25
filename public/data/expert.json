@@ -1,0 +1,87 @@
+[
+  {
+    "question": "What is the Gödel Incompleteness Theorem related to?",
+    "options": [
+      "Geometry",
+      "Arithmetic",
+      "Formal logic and mathematics",
+      "Thermodynamics"
+    ],
+    "answer": "Formal logic and mathematics",
+    "difficulty": "Very Hard"
+  },
+  {
+    "question": "Which enzyme is responsible for DNA replication?",
+    "options": ["RNA polymerase", "Ligase", "DNA helicase", "DNA polymerase"],
+    "answer": "DNA polymerase",
+    "difficulty": "Very Hard"
+  },
+  {
+    "question": "What is the derivative of sin(x) with respect to x?",
+    "options": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
+    "answer": "cos(x)",
+    "difficulty": "Very Hard"
+  },
+  {
+    "question": "What does the term 'event horizon' refer to?",
+    "options": [
+      "Limit of the observable universe",
+      "Edge of a black hole",
+      "Limit of the Milky Way galaxy",
+      "Beginning of time"
+    ],
+    "answer": "Edge of a black hole",
+    "difficulty": "Very Hard"
+  },
+  {
+    "question": "Which is the rarest blood type in the world?",
+    "options": ["O-", "AB+", "Rh-null", "A+"],
+    "answer": "Rh-null",
+    "difficulty": "Very Hard"
+  },
+  {
+    "question": "Which protocol secures web traffic via encryption?",
+    "options": ["HTTP", "TCP", "SSL/TLS", "FTP"],
+    "answer": "SSL/TLS",
+    "difficulty": "Very Hard"
+  },
+  {
+    "question": "Who formulated the uncertainty principle?",
+    "options": [
+      "Niels Bohr",
+      "Albert Einstein",
+      "Werner Heisenberg",
+      "Erwin Schrödinger"
+    ],
+    "answer": "Werner Heisenberg",
+    "difficulty": "Very Hard"
+  },
+  {
+    "question": "What is the value of Planck's constant (h) approximately?",
+    "options": [
+      "6.626 x 10^-34 Js",
+      "9.81 m/s²",
+      "3 x 10^8 m/s",
+      "1.6 x 10^-19 C"
+    ],
+    "answer": "6.626 x 10^-34 Js",
+    "difficulty": "Very Hard"
+  },
+  {
+    "question": "Which country launched the first artificial satellite?",
+    "options": ["USA", "Russia", "Germany", "China"],
+    "answer": "Russia",
+    "difficulty": "Very Hard"
+  },
+  {
+    "question": "In quantum computing, what is a 'qubit'?",
+    "options": [
+      "A classical binary digit",
+      "A 2-state transistor",
+      "A unit of quantum information",
+      "An error correction code"
+    ],
+    "answer": "A unit of quantum information",
+    "difficulty": "Very Hard"
+  }
+]

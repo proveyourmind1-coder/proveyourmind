@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the capital of Kazakhstan?",
+    "options": ["Almaty", "Tashkent", "Astana", "Baku"],
+    "answer": "Astana",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which scientist proposed the three laws of motion?",
+    "options": ["Einstein", "Galileo", "Newton", "Kepler"],
+    "answer": "Newton",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which blood type is known as the universal donor?",
+    "options": ["A", "B", "AB", "O negative"],
+    "answer": "O negative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the currency of South Korea?",
+    "options": ["Yuan", "Won", "Yen", "Baht"],
+    "answer": "Won",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which element has the atomic number 26?",
+    "options": ["Copper", "Iron", "Zinc", "Lead"],
+    "answer": "Iron",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which language has the most native speakers worldwide?",
+    "options": ["English", "Hindi", "Mandarin Chinese", "Spanish"],
+    "answer": "Mandarin Chinese",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Who developed the theory of general relativity?",
+    "options": ["Einstein", "Newton", "Bohr", "Tesla"],
+    "answer": "Einstein",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which desert is the largest in the world?",
+    "options": ["Sahara", "Gobi", "Kalahari", "Antarctica"],
+    "answer": "Antarctica",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What part of the cell contains genetic material?",
+    "options": ["Ribosome", "Nucleus", "Mitochondria", "Cytoplasm"],
+    "answer": "Nucleus",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Who is the author of 'War and Peace'?",
+    "options": ["Tolstoy", "Dostoevsky", "Chekhov", "Pushkin"],
+    "answer": "Tolstoy",
+    "difficulty": "Hard"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "options": ["China", "South Korea", "Japan", "Thailand"],
+    "answer": "Japan",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the boiling point of water in Celsius?",
+    "options": ["90°C", "100°C", "110°C", "120°C"],
+    "answer": "100°C",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "options": ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
+    "answer": "Leonardo da Vinci",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which gas do plants absorb from the atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": "Carbon Dioxide",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the hardest natural substance?",
+    "options": ["Gold", "Iron", "Diamond", "Platinum"],
+    "answer": "Diamond",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which continent is the Sahara Desert located in?",
+    "options": ["Asia", "Africa", "Australia", "South America"],
+    "answer": "Africa",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which organ purifies our blood?",
+    "options": ["Lungs", "Heart", "Kidneys", "Liver"],
+    "answer": "Kidneys",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which instrument has keys, pedals, and strings?",
+    "options": ["Guitar", "Violin", "Flute", "Piano"],
+    "answer": "Piano",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "How many bones are there in the adult human body?",
+    "options": ["198", "206", "210", "225"],
+    "answer": "206",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the chemical formula for water?",
+    "options": ["H2O", "CO2", "O2", "NaCl"],
+    "answer": "H2O",
+    "difficulty": "Medium"
+  }
+]

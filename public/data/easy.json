@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the capital of India?",
+    "options": ["Delhi", "Mumbai", "Kolkata", "Chennai"],
+    "answer": "Delhi",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Earth", "Venus", "Mars", "Jupiter"],
+    "answer": "Mars",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What color are bananas when ripe?",
+    "options": ["Red", "Yellow", "Blue", "Green"],
+    "answer": "Yellow",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "How many legs does a spider have?",
+    "options": ["6", "8", "10", "12"],
+    "answer": "8",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which animal is known as the King of the Jungle?",
+    "options": ["Tiger", "Elephant", "Lion", "Leopard"],
+    "answer": "Lion",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "How many days are there in a leap year?",
+    "options": ["364", "365", "366", "367"],
+    "answer": "366",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which is the largest ocean?",
+    "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+    "answer": "Pacific",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "How many hours are there in a day?",
+    "options": ["12", "24", "48", "60"],
+    "answer": "24",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What do bees make?",
+    "options": ["Milk", "Honey", "Wool", "Oil"],
+    "answer": "Honey",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which sense do we use with our ears?",
+    "options": ["Taste", "Touch", "Hearing", "Smell"],
+    "answer": "Hearing",
+    "difficulty": "Easy"
+  }
+]
