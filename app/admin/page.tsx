@@ -1,13 +1,22 @@
+// app/admin/page.tsx
 "use client"
 
 import { useState, useEffect } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle
+} from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger
+} from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
 import { useAuth } from "@/components/providers/auth-provider"
 import {
@@ -15,36 +24,40 @@ import {
   BookOpen,
   DollarSign,
   TrendingUp,
-  Plus,
-  Edit,
-  Eye,
-  Settings,
-  ToggleLeft,
-  ToggleRight,
+  Settings
 } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
-import { addQuestion, fetchUsers, updateUserRole, fetchQuizzes, toggleQuizActiveStatus } from "@/app/admin/actions" // Import Server Actions
-import type { User, Quiz, Question } from "@/lib/types" // Import types
+
+import {
+  fetchUsers,
+  fetchQuizzes,
+  fetchFeedback,
+  getShowDummyData,
+  setShowDummyData,
+  getMarqueeMessage,
+  setMarqueeMessage
+} from "@/app/admin/actions"
+
+import type { User, Quiz, Feedback } from "@/lib/types"
 
 export default function AdminPage() {
   const { user, isAdmin } = useAuth()
   const { toast } = useToast()
 
-  const [newQuestion, setNewQuestion] = useState<Omit<Question, "id" | "points">>({
-    question: "",
-    options: ["", "", "", ""],
-    correctAnswer: 0,
-    explanation: "",
-    difficulty: "easy",
-    category: "general",
-  })
   const [users, setUsers] = useState<User[]>([])
   const [quizzes, setQuizzes] = useState<Quiz[]>([])
+  const [feedbacks, setFeedbacks] = useState<Feedback[]>([])
+  const [showDummy, setShowDummy] = useState<boolean>(false)
+  const [marquee, setMarquee] = useState("")
+  const [isSavingMarquee, setIsSavingMarquee] = useState(false)
 
   useEffect(() => {
     if (isAdmin) {
       loadUsers()
       loadQuizzes()
+      loadFeedback()
+      loadDummyToggle()
+      loadMarquee()
     }
   }, [isAdmin])
 
@@ -52,13 +65,9 @@ export default function AdminPage() {
     try {
       const fetchedUsers = await fetchUsers()
       setUsers(fetchedUsers)
-    } catch (error) {
-      console.error("Error loading users:", error)
-      toast({
-        title: "Error",
-        description: "Failed to load users.",
-        variant: "destructive",
-      })
+    } catch (err) {
+      console.error("❌ Error loading users:", err)
+      toast({ title: "Error", description: "Failed to load users.", variant: "destructive" })
     }
   }
 
@@ -66,87 +75,77 @@ export default function AdminPage() {
     try {
       const fetchedQuizzes = await fetchQuizzes()
       setQuizzes(fetchedQuizzes)
-    } catch (error) {
-      console.error("Error loading quizzes:", error)
+    } catch (err) {
+      console.error("❌ Error loading quizzes:", err)
+      toast({ title: "Error", description: "Failed to load quizzes.", variant: "destructive" })
+    }
+  }
+
+  const loadFeedback = async () => {
+    try {
+      const data = await fetchFeedback()
+      setFeedbacks(data)
+    } catch (err) {
+      console.error("❌ Feedback fetch error:", err)
       toast({
         title: "Error",
-        description: "Failed to load quizzes.",
-        variant: "destructive",
+        description: "Failed to load feedback. Please check console.",
+        variant: "destructive"
       })
     }
   }
 
-  const handleAddQuestion = async () => {
+  const loadDummyToggle = async () => {
     try {
-      // Assign default points based on difficulty (example logic)
-      const points =
-        newQuestion.difficulty === "easy"
-          ? 10
-          : newQuestion.difficulty === "medium"
-            ? 20
-            : newQuestion.difficulty === "hard"
-              ? 30
-              : 50
+      const status = await getShowDummyData()
+      setShowDummy(status)
+    } catch (err) {
+      console.error("❌ Error loading dummy toggle:", err)
+    }
+  }
 
-      await addQuestion({ ...newQuestion, points })
+  const handleToggleDummy = async () => {
+    const newVal = !showDummy
+    try {
+      await setShowDummyData(newVal)
+      setShowDummy(newVal)
       toast({
         title: "Success",
-        description: "Question added successfully!",
+        description: `Dummy data ${newVal ? "enabled" : "disabled"}`
       })
-      // Reset form
-      setNewQuestion({
-        question: "",
-        options: ["", "", "", ""],
-        correctAnswer: 0,
-        explanation: "",
-        difficulty: "easy",
-        category: "general",
-      })
-    } catch (error) {
-      console.error("Error adding question:", error)
+    } catch (err) {
+      console.error("❌ Dummy data toggle error:", err)
       toast({
         title: "Error",
-        description: "Failed to add question.",
-        variant: "destructive",
+        description: "Failed to toggle dummy data. Check console.",
+        variant: "destructive"
       })
     }
   }
 
-  const handleChangeUserRole = async (userId: string, currentRole: "user" | "admin") => {
-    const newRole = currentRole === "admin" ? "user" : "admin"
+  const loadMarquee = async () => {
     try {
-      await updateUserRole(userId, newRole)
-      toast({
-        title: "Success",
-        description: `User role updated to ${newRole}.`,
-      })
-      loadUsers() // Reload users to reflect changes
-    } catch (error) {
-      console.error("Error changing user role:", error)
-      toast({
-        title: "Error",
-        description: "Failed to update user role.",
-        variant: "destructive",
-      })
+      const message = await getMarqueeMessage()
+      setMarquee(message)
+    } catch (err) {
+      console.error("❌ Error loading marquee:", err)
     }
   }
 
-  const handleToggleQuizStatus = async (quizId: string, currentStatus: boolean) => {
-    const newStatus = !currentStatus
+  const handleSaveMarquee = async () => {
     try {
-      await toggleQuizActiveStatus(quizId, newStatus)
-      toast({
-        title: "Success",
-        description: `Quiz status updated to ${newStatus ? "Active" : "Inactive"}.`,
-      })
-      loadQuizzes() // Reload quizzes to reflect changes
-    } catch (error) {
-      console.error("Error toggling quiz status:", error)
+      setIsSavingMarquee(true)
+      await setMarqueeMessage(marquee)
+      toast({ title: "Success", description: "Marquee message updated!" })
+    } catch (err) {
+      console.error("❌ Marquee update error:", err)
       toast({
         title: "Error",
-        description: "Failed to update quiz status.",
-        variant: "destructive",
+        description: "Failed to update marquee",
+        variant: "destructive"
       })
+    } finally {
+      setIsSavingMarquee(false)
     }
   }
 
@@ -164,43 +163,28 @@ export default function AdminPage() {
 
   const stats = [
     { title: "Total Users", value: users.length.toLocaleString(), change: "+12%", icon: Users, color: "text-blue-600" },
-    {
-      title: "Active Quizzes",
-      value: quizzes.filter((q) => q.isActive).length.toLocaleString(),
-      change: "+5%",
-      icon: BookOpen,
-      color: "text-green-600",
-    },
+    { title: "Active Quizzes", value: quizzes.filter(q => q.isActive).length.toLocaleString(), change: "+5%", icon: BookOpen, color: "text-green-600" },
     { title: "Revenue", value: "₹2,45,000", change: "+18%", icon: DollarSign, color: "text-purple-600" },
-    { title: "Completion Rate", value: "78%", change: "+3%", icon: TrendingUp, color: "text-orange-600" },
+    { title: "Completion Rate", value: "78%", change: "+3%", icon: TrendingUp, color: "text-orange-600" }
   ]
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
       <div className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-3xl font-bold flex items-center gap-2">
-                <Settings className="h-7 w-7 text-purple-600" />
-                Admin Dashboard
-              </h1>
-              <p className="text-gray-600 mt-1">Manage your ProveYourMind platform</p>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Badge className="bg-green-600">Admin</Badge>
-              <Button variant="outline">
-                <Settings className="mr-2 h-4 w-4" />
-                Settings
-              </Button>
-            </div>
+        <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+          <div>
+            <h1 className="text-3xl font-bold flex items-center gap-2">
+              <Settings className="h-7 w-7 text-purple-600" />
+              Admin Dashboard
+            </h1>
+            <p className="text-gray-600 mt-1">Manage your ProveYourMind platform</p>
           </div>
+          <Badge className="bg-green-600">Admin</Badge>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        {/* Stats Cards */}
+        {/* Stats */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {stats.map((stat, index) => (
             <Card key={index}>
@@ -218,296 +202,76 @@ export default function AdminPage() {
           ))}
         </div>
 
-        {/* Main Content */}
+        {/* Tabs */}
         <Tabs defaultValue="overview" className="space-y-6">
           <TabsList>
             <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="questions">Questions</TabsTrigger>
-            <TabsTrigger value="users">Users</TabsTrigger>
-            <TabsTrigger value="quizzes">Quizzes</TabsTrigger>
-            <TabsTrigger value="payments">Payments</TabsTrigger>
+            <TabsTrigger value="feedback">Feedback</TabsTrigger>
           </TabsList>
 
+          {/* Overview Tab */}
           <TabsContent value="overview" className="space-y-6">
-            <div className="grid lg:grid-cols-2 gap-6">
-              {/* Recent Users */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Recent Users</CardTitle>
-                  <CardDescription>Latest user registrations</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    {users.slice(0, 5).map(
-                      (
-                        userItem, // Show only recent 5 users
-                      ) => (
-                        <div key={userItem.id} className="flex items-center justify-between">
-                          <div>
-                            <p className="font-medium">{userItem.name}</p>
-                            <p className="text-sm text-gray-500">{userItem.email}</p>
-                          </div>
-                          <div className="text-right">
-                            <Badge variant={userItem.role === "admin" ? "default" : "secondary"}>{userItem.role}</Badge>
-                            <p className="text-xs text-gray-500 mt-1">
-                              {userItem.lastLogin ? new Date(userItem.lastLogin).toLocaleDateString() : "N/A"}
-                            </p>
-                          </div>
-                        </div>
-                      ),
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Quiz Performance */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Quiz Performance</CardTitle>
-                  <CardDescription>Most popular quizzes</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    {quizzes.slice(0, 5).map(
-                      (
-                        quizItem, // Show only recent 5 quizzes
-                      ) => (
-                        <div key={quizItem.id} className="flex items-center justify-between">
-                          <div>
-                            <p className="font-medium">{quizItem.title}</p>
-                            <p className="text-sm text-gray-500">
-                              {quizItem.questions.length} questions • {quizItem.difficulty}
-                            </p>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <Badge variant={quizItem.isActive ? "default" : "secondary"}>
-                              {quizItem.isActive ? "Active" : "Inactive"}
-                            </Badge>
-                            <Button size="sm" variant="outline">
-                              <Eye className="h-3 w-3" />
-                            </Button>
-                          </div>
-                        </div>
-                      ),
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </TabsContent>
-
-          <TabsContent value="questions" className="space-y-6">
-            <Card>
+            {/* Dummy Data Toggle */}
+            <Card className="max-w-xl">
               <CardHeader>
-                <CardTitle>Add New Question</CardTitle>
-                <CardDescription>Create questions for your quizzes</CardDescription>
+                <CardTitle>Dummy Data Toggle</CardTitle>
+                <CardDescription>Enable/Disable dummy data in stats/leaderboard</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="difficulty">Difficulty</Label>
-                    <Select
-                      value={newQuestion.difficulty}
-                      onValueChange={(value) =>
-                        setNewQuestion({ ...newQuestion, difficulty: value as Question["difficulty"] })
-                      }
-                    >
-                      <SelectTrigger>
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="easy">Easy</SelectItem>
-                        <SelectItem value="medium">Medium</SelectItem>
-                        <SelectItem value="hard">Hard</SelectItem>
-                        <SelectItem value="expert">Expert</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="category">Category</Label>
-                    <Select
-                      value={newQuestion.category}
-                      onValueChange={(value) => setNewQuestion({ ...newQuestion, category: value })}
-                    >
-                      <SelectTrigger>
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="general">General Knowledge</SelectItem>
-                        <SelectItem value="science">Science & Technology</SelectItem>
-                        <SelectItem value="history">History</SelectItem>
-                        <SelectItem value="sports">Sports</SelectItem>
-                        <SelectItem value="entertainment">Entertainment</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="question">Question</Label>
-                  <Textarea
-                    id="question"
-                    placeholder="Enter your question here..."
-                    value={newQuestion.question}
-                    onChange={(e) => setNewQuestion({ ...newQuestion, question: e.target.value })}
-                  />
-                </div>
-
-                <div className="space-y-4">
-                  <Label>Answer Options</Label>
-                  {newQuestion.options.map((option, index) => (
-                    <div key={index} className="flex items-center space-x-2">
-                      <Input
-                        placeholder={`Option ${index + 1}`}
-                        value={option}
-                        onChange={(e) => {
-                          const newOptions = [...newQuestion.options]
-                          newOptions[index] = e.target.value
-                          setNewQuestion({ ...newQuestion, options: newOptions })
-                        }}
-                      />
-                      <Button
-                        type="button"
-                        variant={newQuestion.correctAnswer === index ? "default" : "outline"}
-                        size="sm"
-                        onClick={() => setNewQuestion({ ...newQuestion, correctAnswer: index })}
-                      >
-                        {newQuestion.correctAnswer === index ? "Correct" : "Mark Correct"}
-                      </Button>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="explanation">Explanation</Label>
-                  <Textarea
-                    id="explanation"
-                    placeholder="Explain why this is the correct answer..."
-                    value={newQuestion.explanation}
-                    onChange={(e) => setNewQuestion({ ...newQuestion, explanation: e.target.value })}
-                  />
-                </div>
-
-                <Button onClick={handleAddQuestion} className="w-full">
-                  <Plus className="mr-2 h-4 w-4" />
-                  Add Question
+              <CardContent className="flex justify-between items-center">
+                <p>Status: <strong>{showDummy ? "Enabled" : "Disabled"}</strong></p>
+                <Button onClick={handleToggleDummy} variant="outline">
+                  {showDummy ? "Disable" : "Enable"}
                 </Button>
               </CardContent>
             </Card>
-          </TabsContent>
 
-          <TabsContent value="users" className="space-y-6">
-            <Card>
+            {/* Marquee Message Control */}
+            <Card className="max-w-3xl">
               <CardHeader>
-                <CardTitle>User Management</CardTitle>
-                <CardDescription>Manage registered users</CardDescription>
+                <CardTitle>Announcement Marquee</CardTitle>
+                <CardDescription>Update the banner shown on user dashboards</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  {users.map((userItem) => (
-                    <div key={userItem.id} className="flex items-center justify-between p-4 border rounded-lg">
-                      <div>
-                        <p className="font-medium">{userItem.name}</p>
-                        <p className="text-sm text-gray-500">{userItem.email}</p>
-                        <p className="text-xs text-gray-400">
-                          Joined {userItem.lastLogin ? new Date(userItem.lastLogin).toLocaleDateString() : "N/A"}
-                        </p>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Badge variant={userItem.role === "admin" ? "default" : "secondary"}>{userItem.role}</Badge>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          onClick={() => handleChangeUserRole(userItem.id, userItem.role)}
-                          disabled={userItem.id === user?.id} // Prevent admin from changing their own role
-                        >
-                          <Edit className="h-3 w-3 mr-1" />
-                          {userItem.role === "admin" ? "Demote" : "Promote"}
-                        </Button>
-                        {/* <Button size="sm" variant="outline">
-                          <Trash2 className="h-3 w-3" />
-                        </Button> */}
-                      </div>
-                    </div>
-                  ))}
+                <Textarea
+                  placeholder="Enter marquee message..."
+                  value={marquee}
+                  onChange={(e) => setMarquee(e.target.value)}
+                />
+                <div className="flex justify-end mt-4">
+                  <Button onClick={handleSaveMarquee} disabled={isSavingMarquee}>
+                    {isSavingMarquee ? "Saving..." : "Save Message"}
+                  </Button>
                 </div>
               </CardContent>
             </Card>
           </TabsContent>
 
-          <TabsContent value="quizzes" className="space-y-6">
+          {/* Feedback Tab */}
+          <TabsContent value="feedback" className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>Quiz Management</CardTitle>
-                <CardDescription>Manage your quiz collection</CardDescription>
+                <CardTitle>User Feedback</CardTitle>
+                <CardDescription>Messages submitted via feedback form</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {quizzes.map((quizItem) => (
-                    <div key={quizItem.id} className="flex items-center justify-between p-4 border rounded-lg">
-                      <div>
-                        <p className="font-medium">{quizItem.title}</p>
-                        <p className="text-sm text-gray-500">
-                          {quizItem.questions.length} questions • {quizItem.difficulty} difficulty
-                        </p>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          onClick={() => handleToggleQuizStatus(quizItem.id, quizItem.isActive)}
-                        >
-                          {quizItem.isActive ? (
-                            <ToggleRight className="h-4 w-4 text-green-500" />
-                          ) : (
-                            <ToggleLeft className="h-4 w-4 text-gray-500" />
-                          )}
-                          <span className="ml-1">{quizItem.isActive ? "Active" : "Inactive"}</span>
-                        </Button>
-                        <Button size="sm" variant="outline">
-                          <Edit className="h-3 w-3" />
-                        </Button>
-                        <Button size="sm" variant="outline">
-                          <Eye className="h-3 w-3" />
-                        </Button>
-                        {/* <Button size="sm" variant="outline">
-                          <Trash2 className="h-3 w-3" />
-                        </Button> */}
-                      </div>
+              <CardContent className="space-y-4">
+                {feedbacks.length === 0 ? (
+                  <p className="text-gray-500">No feedback messages yet.</p>
+                ) : (
+                  feedbacks.map((fb) => (
+                    <div key={fb.id} className="border rounded-lg p-4 space-y-1">
+                      <p className="font-medium">
+                        {fb.name}{" "}
+                        {fb.email && (
+                          <span className="text-xs text-gray-500">({fb.email})</span>
+                        )}
+                      </p>
+                      <p className="text-sm">{fb.message}</p>
+                      <p className="text-xs text-gray-400">
+                        Submitted on {fb.createdAt?.toLocaleString()}
+                      </p>
                     </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          <TabsContent value="payments" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Payment Management</CardTitle>
-                <CardDescription>Track payments and payouts</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <p className="text-sm text-green-600">Total Revenue</p>
-                      <p className="text-2xl font-bold text-green-700">₹2,45,000</p>
-                    </div>
-                    <div className="bg-blue-50 p-4 rounded-lg">
-                      <p className="text-sm text-blue-600">Pending Payouts</p>
-                      <p className="text-2xl font-bold text-blue-700">₹15,000</p>
-                    </div>
-                    <div className="bg-purple-50 p-4 rounded-lg">
-                      <p className="text-sm text-purple-600">This Month</p>
-                      <p className="text-2xl font-bold text-purple-700">₹45,000</p>
-                    </div>
-                  </div>
-
-                  <div className="text-center py-8">
-                    <p className="text-gray-500">Payment history and detailed analytics coming soon...</p>
-                  </div>
-                </div>
+                  ))
+                )}
               </CardContent>
             </Card>
           </TabsContent>

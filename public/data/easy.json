@@ -1,62 +1,62 @@
 [
   {
-    "question": "What is the capital of India?",
-    "options": ["Delhi", "Mumbai", "Kolkata", "Chennai"],
-    "answer": "Delhi",
-    "difficulty": "Easy"
+    "question": "What is the capital of Kazakhstan?",
+    "options": ["Almaty", "Tashkent", "Astana", "Baku"],
+    "answer": "Astana",
+    "difficulty": "Hard"
   },
   {
-    "question": "Which planet is known as the Red Planet?",
-    "options": ["Earth", "Venus", "Mars", "Jupiter"],
-    "answer": "Mars",
-    "difficulty": "Easy"
+    "question": "Which scientist proposed the three laws of motion?",
+    "options": ["Einstein", "Galileo", "Newton", "Kepler"],
+    "answer": "Newton",
+    "difficulty": "Hard"
   },
   {
-    "question": "What color are bananas when ripe?",
-    "options": ["Red", "Yellow", "Blue", "Green"],
-    "answer": "Yellow",
-    "difficulty": "Easy"
+    "question": "Which blood type is known as the universal donor?",
+    "options": ["A", "B", "AB", "O negative"],
+    "answer": "O negative",
+    "difficulty": "Hard"
   },
   {
-    "question": "How many legs does a spider have?",
-    "options": ["6", "8", "10", "12"],
-    "answer": "8",
-    "difficulty": "Easy"
+    "question": "What is the currency of South Korea?",
+    "options": ["Yuan", "Won", "Yen", "Baht"],
+    "answer": "Won",
+    "difficulty": "Hard"
   },
   {
-    "question": "Which animal is known as the King of the Jungle?",
-    "options": ["Tiger", "Elephant", "Lion", "Leopard"],
-    "answer": "Lion",
-    "difficulty": "Easy"
+    "question": "Which element has the atomic number 26?",
+    "options": ["Copper", "Iron", "Zinc", "Lead"],
+    "answer": "Iron",
+    "difficulty": "Hard"
   },
   {
-    "question": "How many days are there in a leap year?",
-    "options": ["364", "365", "366", "367"],
-    "answer": "366",
-    "difficulty": "Easy"
+    "question": "Which language has the most native speakers worldwide?",
+    "options": ["English", "Hindi", "Mandarin Chinese", "Spanish"],
+    "answer": "Mandarin Chinese",
+    "difficulty": "Hard"
   },
   {
-    "question": "Which is the largest ocean?",
-    "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
-    "answer": "Pacific",
-    "difficulty": "Easy"
+    "question": "Who developed the theory of general relativity?",
+    "options": ["Einstein", "Newton", "Bohr", "Tesla"],
+    "answer": "Einstein",
+    "difficulty": "Hard"
   },
   {
-    "question": "How many hours are there in a day?",
-    "options": ["12", "24", "48", "60"],
-    "answer": "24",
-    "difficulty": "Easy"
+    "question": "Which desert is the largest in the world?",
+    "options": ["Sahara", "Gobi", "Kalahari", "Antarctica"],
+    "answer": "Antarctica",
+    "difficulty": "Hard"
   },
   {
-    "question": "What do bees make?",
-    "options": ["Milk", "Honey", "Wool", "Oil"],
-    "answer": "Honey",
-    "difficulty": "Easy"
+    "question": "What part of the cell contains genetic material?",
+    "options": ["Ribosome", "Nucleus", "Mitochondria", "Cytoplasm"],
+    "answer": "Nucleus",
+    "difficulty": "Hard"
   },
   {
-    "question": "Which sense do we use with our ears?",
-    "options": ["Taste", "Touch", "Hearing", "Smell"],
-    "answer": "Hearing",
-    "difficulty": "Easy"
+    "question": "Who is the author of 'War and Peace'?",
+    "options": ["Tolstoy", "Dostoevsky", "Chekhov", "Pushkin"],
+    "answer": "Tolstoy",
+    "difficulty": "Hard"
   }
 ]

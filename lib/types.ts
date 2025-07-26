@@ -1,3 +1,4 @@
+// User profile
 export interface User {
   id: string
   email: string
@@ -9,17 +10,18 @@ export interface User {
   rank: number
   badges: string[]
   streak: number
-  lastLogin: Date // Changed to Date type for consistency
+  lastLogin: Date
   referralCode: string
   referredBy?: string
 }
 
+// Quiz definition
 export interface Quiz {
   id: string
   title: string
   difficulty: "easy" | "medium" | "hard" | "expert"
   price: number
-  questions: Question[] // Array of Question objects
+  questions: Question[] // Optional: You can change to string[] if referencing question IDs
   timeLimit: number
   category: string
   language: string
@@ -27,17 +29,19 @@ export interface Quiz {
   createdAt: Date
 }
 
+// Individual Question
 export interface Question {
   id: string
   question: string
   options: string[]
-  correctAnswer: number // Changed to correctAnswer for clarity
+  correctAnswer: number
   explanation?: string
   points: number
-  difficulty: "easy" | "medium" | "hard" | "expert" // Added difficulty
-  category: string // Added category
+  difficulty: "easy" | "medium" | "hard" | "expert"
+  category: string
 }
 
+// Quiz attempt record
 export interface QuizAttempt {
   id: string
   userId: string
@@ -50,6 +54,7 @@ export interface QuizAttempt {
   paymentId?: string
 }
 
+// Tournament model
 export interface Tournament {
   id: string
   name: string
@@ -61,4 +66,13 @@ export interface Tournament {
   participants: string[]
   winners: { userId: string; prize: number; rank: number }[]
   isActive: boolean
+}
+
+// Feedback form submission
+export interface Feedback {
+  id: string
+  name: string
+  email?: string
+  message: string
+  createdAt: Date
 }
