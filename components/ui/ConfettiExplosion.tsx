@@ -22,7 +22,7 @@ export default function ConfettiExplosion({ trigger }: { trigger: boolean }) {
     <Confetti
       width={width || 800}
       height={height || 600}
-      numberOfPieces={400}
+      numberOfPieces={300}
       recycle={false}
     />
   )

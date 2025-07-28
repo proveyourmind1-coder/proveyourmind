@@ -1,4 +1,3 @@
-// app/admin/page.tsx
 "use client"
 
 import { useState, useEffect } from "react"
@@ -39,6 +38,7 @@ import {
 } from "@/app/admin/actions"
 
 import type { User, Quiz, Feedback } from "@/lib/types"
+import V0Generator from "@/components/V0Generator"
 
 export default function AdminPage() {
   const { user, isAdmin } = useAuth()
@@ -207,11 +207,12 @@ export default function AdminPage() {
           <TabsList>
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="feedback">Feedback</TabsTrigger>
+            <TabsTrigger value="generator">v0.dev Generator</TabsTrigger>
           </TabsList>
 
           {/* Overview Tab */}
           <TabsContent value="overview" className="space-y-6">
-            {/* Dummy Data Toggle */}
+            {/* Dummy Toggle */}
             <Card className="max-w-xl">
               <CardHeader>
                 <CardTitle>Dummy Data Toggle</CardTitle>
@@ -225,7 +226,7 @@ export default function AdminPage() {
               </CardContent>
             </Card>
 
-            {/* Marquee Message Control */}
+            {/* Marquee */}
             <Card className="max-w-3xl">
               <CardHeader>
                 <CardTitle>Announcement Marquee</CardTitle>
@@ -272,6 +273,19 @@ export default function AdminPage() {
                     </div>
                   ))
                 )}
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* v0.dev Generator Tab */}
+          <TabsContent value="generator" className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>v0.dev Component Generator</CardTitle>
+                <CardDescription>Describe a component and generate ready-to-use UI code</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <V0Generator />
               </CardContent>
             </Card>
           </TabsContent>

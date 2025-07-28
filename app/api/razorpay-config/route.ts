@@ -1,12 +1,28 @@
-import { NextResponse } from "next/server"
+import { NextResponse } from "next/server";
+import Razorpay from "razorpay";
+
+// ✅ Required for dynamic server execution
+export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const keyId = process.env.RAZORPAY_KEY_ID
+  const razorpay = new Razorpay({
+    key_id: process.env.RAZORPAY_KEY_ID!,
+    key_secret: process.env.RAZORPAY_KEY_SECRET!,
+  });
 
-  if (!keyId) {
-    console.error("Razorpay Key ID is not set in environment variables.")
-    return NextResponse.json({ error: "Razorpay Key ID not configured" }, { status: 500 })
+  try {
+    const order = await razorpay.orders.create({
+      amount: 10000, // ₹100 (replace as needed)
+      currency: "INR",
+      receipt: "quiz_order_" + Date.now(),
+    });
+
+    return NextResponse.json(order);
+  } catch (error) {
+    console.error("Razorpay API error:", error);
+    return NextResponse.json(
+      { error: "Failed to create Razorpay order" },
+      { status: 500 }
+    );
   }
-
-  return NextResponse.json({ keyId })
 }

@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
+  // ✅ NO export mode — Razorpay needs server runtime
+  // output: "export", // ❌ Remove or comment this if present
+
+  // ✅ Optional: Enable server actions (if needed)
+  experimental: {
+    serverActions: true,
   },
 }
 

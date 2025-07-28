@@ -14,7 +14,7 @@ const dummyPlayers = [
   { rank: 5, name: "WisdomSeeker", score: 1750, streak: 9, badges: 6 },
 ]
 
-export default function Leaderboard() {
+export default function DummyLeaderboard() {
   const getRankIcon = (rank: number) => {
     switch (rank) {
       case 1:
