@@ -1,0 +1,410 @@
+[
+  {
+    "question": "How many legs does a spider have?",
+    "options": ["4", "6", "8", "10"],
+    "answer": "8",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Insects"
+  },
+  {
+    "question": "What color is the sun?",
+    "options": ["Blue", "Green", "Yellow", "Red"],
+    "answer": "Yellow",
+    "ageGroup": "Kids (5–10)",
+    "category": "Science",
+    "subcategory": "Astronomy"
+  },
+  {
+    "question": "Which of these is not a fruit?",
+    "options": ["Apple", "Carrot", "Banana", "Grapes"],
+    "answer": "Carrot",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "What do you call a baby dog?",
+    "options": ["Puppy", "Kitten", "Cub", "Chick"],
+    "answer": "Puppy",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Pets"
+  },
+  {
+    "question": "Which of these is the largest animal?",
+    "options": ["Elephant", "Lion", "Giraffe", "Blue Whale"],
+    "answer": "Blue Whale",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Wild Animals"
+  },
+  {
+    "question": "How many colors are in a rainbow?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "ageGroup": "Kids (5–10)",
+    "category": "Science",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "Which Disney movie features Elsa and Anna?",
+    "options": ["Moana", "Frozen", "Tangled", "Cinderella"],
+    "answer": "Frozen",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Disney"
+  },
+  {
+    "question": "What is the name of Harry Potter's pet owl?",
+    "options": ["Hedwig", "Scabbers", "Crookshanks", "Fawkes"],
+    "answer": "Hedwig",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Harry Potter"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "answer": "Mars",
+    "ageGroup": "Kids (5–10)",
+    "category": "Science",
+    "subcategory": "Astronomy"
+  },
+  {
+    "question": "What do bees make?",
+    "options": ["Jam", "Honey", "Juice", "Milk"],
+    "answer": "Honey",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Insects"
+  },
+  {
+    "question": "Which of these is a shape with three sides?",
+    "options": ["Square", "Circle", "Triangle", "Rectangle"],
+    "answer": "Triangle",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Shapes"
+  },
+  {
+    "question": "What is the opposite of 'day'?",
+    "options": ["Morning", "Evening", "Night", "Noon"],
+    "answer": "Night",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "Which of these is a winter sport?",
+    "options": ["Swimming", "Skiing", "Soccer", "Basketball"],
+    "answer": "Skiing",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Sports"
+  },
+  {
+    "question": "What is the capital of France?",
+    "options": ["Berlin", "Madrid", "Paris", "Rome"],
+    "answer": "Paris",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Geography"
+  },
+  {
+    "question": "Which of these animals can fly?",
+    "options": ["Penguin", "Ostrich", "Bat", "Kangaroo"],
+    "answer": "Bat",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Wild Animals"
+  },
+  {
+    "question": "How many fingers does a person have on one hand?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "Which of these is a primary color?",
+    "options": ["Purple", "Green", "Orange", "Red"],
+    "answer": "Red",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Colors"
+  },
+  {
+    "question": "What is the name of the fairy in Peter Pan?",
+    "options": ["Tinker Bell", "Ariel", "Cinderella", "Snow White"],
+    "answer": "Tinker Bell",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Disney"
+  },
+  {
+    "question": "Which of these is a vegetable?",
+    "options": ["Apple", "Banana", "Tomato", "Broccoli"],
+    "answer": "Broccoli",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "What is the largest mammal on land?",
+    "options": ["Elephant", "Giraffe", "Hippo", "Rhino"],
+    "answer": "Elephant",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Wild Animals"
+  },
+  {
+    "question": "Which of these is a type of fish?",
+    "options": ["Shark", "Dolphin", "Whale", "Seal"],
+    "answer": "Shark",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Sea Animals"
+  },
+  {
+    "question": "What do you use to write on paper?",
+    "options": ["Spoon", "Pencil", "Fork", "Knife"],
+    "answer": "Pencil",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "Which of these is a season?",
+    "options": ["Monday", "Summer", "Christmas", "Morning"],
+    "answer": "Summer",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "What is the name of the toy cowboy in Toy Story?",
+    "options": ["Buzz Lightyear", "Woody", "Slinky", "Rex"],
+    "answer": "Woody",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Disney"
+  },
+  {
+    "question": "Which of these is a bird?",
+    "options": ["Bat", "Butterfly", "Penguin", "Dragonfly"],
+    "answer": "Penguin",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Birds"
+  },
+  {
+    "question": "What is the tallest animal in the world?",
+    "options": ["Elephant", "Giraffe", "Kangaroo", "Lion"],
+    "answer": "Giraffe",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Wild Animals"
+  },
+  {
+    "question": "Which of these is a sweet food?",
+    "options": ["Lemon", "Chocolate", "Salt", "Vinegar"],
+    "answer": "Chocolate",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "What is the name of the pirate in Peter Pan?",
+    "options": ["Captain Hook", "Blackbeard", "Jack Sparrow", "Long John Silver"],
+    "answer": "Captain Hook",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Disney"
+  },
+  {
+    "question": "Which of these is a type of tree?",
+    "options": ["Rose", "Oak", "Daisy", "Tulip"],
+    "answer": "Oak",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Plants"
+  },
+  {
+    "question": "What is the name of the little mermaid in the Disney movie?",
+    "options": ["Belle", "Ariel", "Jasmine", "Pocahontas"],
+    "answer": "Ariel",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Disney"
+  },
+  {
+    "question": "Which of these is a reptile?",
+    "options": ["Frog", "Turtle", "Fish", "Rabbit"],
+    "answer": "Turtle",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Reptiles"
+  },
+  {
+    "question": "What is the name of the fairy tale character who lost her glass slipper?",
+    "options": ["Snow White", "Cinderella", "Rapunzel", "Sleeping Beauty"],
+    "answer": "Cinderella",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Fairy Tales"
+  },
+  {
+    "question": "Which of these is a planet in our solar system?",
+    "options": ["Moon", "Sun", "Venus", "North Star"],
+    "answer": "Venus",
+    "ageGroup": "Kids (5–10)",
+    "category": "Science",
+    "subcategory": "Astronomy"
+  },
+  {
+    "question": "What is the main color of grass?",
+    "options": ["Blue", "Red", "Green", "Yellow"],
+    "answer": "Green",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "Which of these is a farm animal?",
+    "options": ["Lion", "Cow", "Tiger", "Bear"],
+    "answer": "Cow",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Farm Animals"
+  },
+  {
+    "question": "What is the name of the boy who never grows up in Peter Pan?",
+    "options": ["Captain Hook", "Wendy", "Peter Pan", "Tinker Bell"],
+    "answer": "Peter Pan",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Disney"
+  },
+  {
+    "question": "Which of these is a type of weather?",
+    "options": ["Rain", "Mountain", "River", "Desert"],
+    "answer": "Rain",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "What is the name of the big, friendly giant in Roald Dahl's book?",
+    "options": ["The BFG", "The Giant", "Goliath", "Titan"],
+    "answer": "The BFG",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Books"
+  },
+  {
+    "question": "Which of these is a fruit?",
+    "options": ["Carrot", "Potato", "Strawberry", "Onion"],
+    "answer": "Strawberry",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "What is the name of the superhero who is also known as the 'Man of Steel'?",
+    "options": ["Batman", "Spider-Man", "Superman", "Iron Man"],
+    "answer": "Superman",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Superheroes"
+  },
+  {
+    "question": "Which of these is a type of transportation?",
+    "options": ["Table", "Chair", "Bicycle", "Lamp"],
+    "answer": "Bicycle",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Basic Facts"
+  },
+  {
+    "question": "What is the name of the bear in the jungle book?",
+    "options": ["Bagheera", "Baloo", "Shere Khan", "Kaa"],
+    "answer": "Baloo",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Disney"
+  },
+  {
+    "question": "Which of these is a type of insect?",
+    "options": ["Spider", "Snail", "Ladybug", "Earthworm"],
+    "answer": "Ladybug",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Insects"
+  },
+  {
+    "question": "What is the name of the fairy tale character with long hair trapped in a tower?",
+    "options": ["Cinderella", "Rapunzel", "Snow White", "Sleeping Beauty"],
+    "answer": "Rapunzel",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Fairy Tales"
+  },
+  {
+    "question": "Which of these is a type of flower?",
+    "options": ["Pineapple", "Rose", "Cactus", "Mushroom"],
+    "answer": "Rose",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Plants"
+  },
+  {
+    "question": "What is the name of the toy space ranger in Toy Story?",
+    "options": ["Woody", "Buzz Lightyear", "Mr. Potato Head", "Rex"],
+    "answer": "Buzz Lightyear",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Disney"
+  },
+  {
+    "question": "Which of these is a type of rock?",
+    "options": ["Granite", "Water", "Air", "Fire"],
+    "answer": "Granite",
+    "ageGroup": "Kids (5–10)",
+    "category": "Science",
+    "subcategory": "Geology"
+  },
+  {
+    "question": "What is the name of the young lion who becomes king in The Lion King?",
+    "options": ["Mufasa", "Scar", "Simba", "Timon"],
+    "answer": "Simba",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Disney"
+  },
+  {
+    "question": "Which of these is a type of house pet?",
+    "options": ["Elephant", "Giraffe", "Cat", "Lion"],
+    "answer": "Cat",
+    "ageGroup": "Kids (5–10)",
+    "category": "Animals",
+    "subcategory": "Pets"
+  },
+  {
+    "question": "What is the name of the friendly ghost in cartoons?",
+    "options": ["Scooby-Doo", "Casper", "Mickey Mouse", "SpongeBob"],
+    "answer": "Casper",
+    "ageGroup": "Kids (5–10)",
+    "category": "Cartoons",
+    "subcategory": "Classic Cartoons"
+  },
+  {
+    "question": "Which of these is a type of sport?",
+    "options": ["Swimming", "Eating", "Sleeping", "Reading"],
+    "answer": "Swimming",
+    "ageGroup": "Kids (5–10)",
+    "category": "General Knowledge",
+    "subcategory": "Sports"
+  }
+]

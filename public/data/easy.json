@@ -1,0 +1,273 @@
+[
+  {
+    "question": "What is the term for the minimum amount of energy required to remove an electron from an atom?",
+    "options": ["Ionization energy", "Electron affinity", "Electronegativity", "Binding energy"],
+    "answer": "Ionization energy",
+    "category": "Chemistry"
+  },
+  {
+    "question": "Which part of the brain is primarily responsible for regulating emotions and memory?",
+    "options": ["Cerebellum", "Amygdala", "Hypothalamus", "Thalamus"],
+    "answer": "Amygdala",
+    "category": "Psychology"
+  },
+  {
+    "question": "What is the approximate age of the Earth?",
+    "options": ["2.5 billion years", "4.5 billion years", "3.5 million years", "6.0 billion years"],
+    "answer": "4.5 billion years",
+    "category": "Earth Science"
+  },
+  {
+    "question": "Which scientist is known for developing the uncertainty principle?",
+    "options": ["Werner Heisenberg", "Niels Bohr", "Erwin Schrödinger", "Max Planck"],
+    "answer": "Werner Heisenberg",
+    "category": "Physics"
+  },
+  {
+    "question": "What is the name of the process where plants convert nitrate into nitrogen gas?",
+    "options": ["Nitrification", "Ammonification", "Denitrification", "Fixation"],
+    "answer": "Denitrification",
+    "category": "Biology"
+  },
+  {
+    "question": "Which element has the highest electrical conductivity at room temperature?",
+    "options": ["Copper", "Silver", "Gold", "Aluminum"],
+    "answer": "Silver",
+    "category": "Chemistry"
+  },
+  {
+    "question": "What type of galaxy is the Milky Way?",
+    "options": ["Elliptical", "Spiral", "Irregular", "Lenticular"],
+    "answer": "Spiral",
+    "category": "Astronomy"
+  },
+  {
+    "question": "Which hormone regulates the sleep-wake cycle in humans?",
+    "options": ["Melatonin", "Cortisol", "Serotonin", "Insulin"],
+    "answer": "Melatonin",
+    "category": "Biology"
+  },
+  {
+    "question": "Which layer of the Earth is composed mostly of solid iron and nickel?",
+    "options": ["Crust", "Mantle", "Outer core", "Inner core"],
+    "answer": "Inner core",
+    "category": "Earth Science"
+  },
+  {
+    "question": "Which of the following laws explains the relationship between the volume and temperature of a gas?",
+    "options": ["Boyle's Law", "Charles's Law", "Avogadro's Law", "Dalton's Law"],
+    "answer": "Charles's Law",
+    "category": "Chemistry"
+  },
+  {
+    "question": "What is the phenomenon called when white light splits into different colors?",
+    "options": ["Diffraction", "Reflection", "Dispersion", "Scattering"],
+    "answer": "Dispersion",
+    "category": "Physics"
+  },
+  {
+    "question": "What organelle is primarily responsible for producing ATP in eukaryotic cells?",
+    "options": ["Nucleus", "Chloroplast", "Golgi apparatus", "Mitochondrion"],
+    "answer": "Mitochondrion",
+    "category": "Biology"
+  },
+  {
+    "question": "Which scale is used to measure the hardness of minerals?",
+    "options": ["Mohs scale", "Richter scale", "Beaufort scale", "pH scale"],
+    "answer": "Mohs scale",
+    "category": "Earth Science"
+  },
+  {
+    "question": "Which gas makes up most of the Earth's atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
+    "answer": "Nitrogen",
+    "category": "Earth Science"
+  },
+  {
+    "question": "Which part of the neuron receives incoming signals?",
+    "options": ["Axon", "Soma", "Myelin sheath", "Dendrites"],
+    "answer": "Dendrites",
+    "category": "Psychology"
+  },
+  {
+    "question": "What does E=mc² represent?",
+    "options": ["Kinetic energy", "Potential energy", "Mass-energy equivalence", "Gravitational force"],
+    "answer": "Mass-energy equivalence",
+    "category": "Physics"
+  },
+  {
+    "question": "Which vitamin is synthesized by the human skin when exposed to sunlight?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin D", "Vitamin K"],
+    "answer": "Vitamin D",
+    "category": "Biology"
+  },
+  {
+    "question": "Which branch of psychology focuses on mental processes such as thinking, memory, and problem-solving?",
+    "options": ["Behavioral psychology", "Cognitive psychology", "Humanistic psychology", "Psychoanalysis"],
+    "answer": "Cognitive psychology",
+    "category": "Psychology"
+  },
+  {
+    "question": "What is the most abundant element in the universe?",
+    "options": ["Oxygen", "Carbon", "Hydrogen", "Helium"],
+    "answer": "Hydrogen",
+    "category": "Astronomy"
+  },
+  {
+    "question": "Which type of volcano is the most explosive?",
+    "options": ["Shield", "Cinder cone", "Composite", "Lava dome"],
+    "answer": "Composite",
+    "category": "Earth Science"
+  },
+
+  {
+    "question": "Which chemical bond involves the sharing of electron pairs between atoms?",
+    "options": ["Ionic bond", "Hydrogen bond", "Covalent bond", "Metallic bond"],
+    "answer": "Covalent bond",
+    "category": "Chemistry"
+  },
+  {
+    "question": "What is the speed of light in a vacuum?",
+    "options": ["3×10⁸ m/s", "1.5×10⁸ m/s", "9.8 m/s²", "6.02×10²³ m/s"],
+    "answer": "3×10⁸ m/s",
+    "category": "Physics"
+  },
+  {
+    "question": "What type of rock is formed from the cooling and solidification of magma?",
+    "options": ["Sedimentary", "Metamorphic", "Igneous", "Basaltic"],
+    "answer": "Igneous",
+    "category": "Earth Science"
+  },
+  {
+    "question": "Which part of the eye controls the amount of light that enters?",
+    "options": ["Lens", "Iris", "Retina", "Cornea"],
+    "answer": "Iris",
+    "category": "Biology"
+  },
+  {
+    "question": "Who proposed the heliocentric model of the solar system?",
+    "options": ["Aristotle", "Ptolemy", "Galileo Galilei", "Nicolaus Copernicus"],
+    "answer": "Nicolaus Copernicus",
+    "category": "Astronomy"
+  },
+  {
+    "question": "Which neurotransmitter is most associated with feelings of pleasure?",
+    "options": ["Serotonin", "Dopamine", "GABA", "Acetylcholine"],
+    "answer": "Dopamine",
+    "category": "Psychology"
+  },
+  {
+    "question": "Which law states that every action has an equal and opposite reaction?",
+    "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Hooke's Law"],
+    "answer": "Newton's Third Law",
+    "category": "Physics"
+  },
+  {
+    "question": "Which element is used as the standard for atomic mass?",
+    "options": ["Carbon-12", "Oxygen-16", "Hydrogen-1", "Uranium-238"],
+    "answer": "Carbon-12",
+    "category": "Chemistry"
+  },
+  {
+    "question": "What kind of energy is stored in chemical bonds?",
+    "options": ["Thermal energy", "Kinetic energy", "Nuclear energy", "Potential energy"],
+    "answer": "Potential energy",
+    "category": "Chemistry"
+  },
+  {
+    "question": "Which gas is responsible for the greenhouse effect on Earth?",
+    "options": ["Oxygen", "Hydrogen", "Carbon dioxide", "Nitrogen"],
+    "answer": "Carbon dioxide",
+    "category": "Earth Science"
+  },
+  {
+    "question": "What is the term for a star that suddenly increases greatly in brightness?",
+    "options": ["Nova", "Supernova", "Neutron star", "Quasar"],
+    "answer": "Supernova",
+    "category": "Astronomy"
+  },
+  {
+    "question": "Which gland regulates metabolism in the human body?",
+    "options": ["Adrenal gland", "Pituitary gland", "Thyroid gland", "Pineal gland"],
+    "answer": "Thyroid gland",
+    "category": "Biology"
+  },
+  {
+    "question": "Which planet in the solar system rotates on its side?",
+    "options": ["Jupiter", "Mars", "Uranus", "Venus"],
+    "answer": "Uranus",
+    "category": "Astronomy"
+  },
+  {
+    "question": "Which part of the cell is responsible for packaging proteins?",
+    "options": ["Ribosome", "Golgi apparatus", "Lysosome", "Nucleus"],
+    "answer": "Golgi apparatus",
+    "category": "Biology"
+  },
+  {
+    "question": "Which branch of Earth science studies earthquakes and the movement of Earth's crust?",
+    "options": ["Meteorology", "Seismology", "Volcanology", "Hydrology"],
+    "answer": "Seismology",
+    "category": "Earth Science"
+  },
+  {
+    "question": "What is Avogadro's number?",
+    "options": ["6.022 × 10²²", "6.022 × 10²³", "3.14 × 10⁷", "1.6 × 10⁻¹⁹"],
+    "answer": "6.022 × 10²³",
+    "category": "Chemistry"
+  },
+  {
+    "question": "Which branch of psychology studies observable behavior without focusing on mental processes?",
+    "options": ["Cognitive", "Behavioral", "Humanistic", "Biopsychology"],
+    "answer": "Behavioral",
+    "category": "Psychology"
+  },
+  {
+    "question": "What type of bond is formed between water molecules?",
+    "options": ["Ionic bond", "Covalent bond", "Hydrogen bond", "Van der Waals bond"],
+    "answer": "Hydrogen bond",
+    "category": "Chemistry"
+  },
+  {
+    "question": "Which blood cells help fight infections?",
+    "options": ["Red blood cells", "Platelets", "White blood cells", "Plasma"],
+    "answer": "White blood cells",
+    "category": "Biology"
+  },
+  {
+    "question": "Which theory explains the formation of the universe?",
+    "options": ["Plate Tectonics", "Evolution", "Big Bang Theory", "String Theory"],
+    "answer": "Big Bang Theory",
+    "category": "Astronomy"
+  },
+  {
+    "question": "What is the primary cause of tides on Earth?",
+    "options": ["Earth’s rotation", "Gravitational pull of the Moon", "Sun's heat", "Plate tectonics"],
+    "answer": "Gravitational pull of the Moon",
+    "category": "Earth Science"
+  },
+  {
+    "question": "Which law states that energy cannot be created or destroyed?",
+    "options": ["Law of Conservation of Energy", "Second Law of Thermodynamics", "Hooke's Law", "Law of Inertia"],
+    "answer": "Law of Conservation of Energy",
+    "category": "Physics"
+  },
+  {
+    "question": "Which system in the body is responsible for transporting oxygen?",
+    "options": ["Digestive", "Respiratory", "Circulatory", "Nervous"],
+    "answer": "Circulatory",
+    "category": "Biology"
+  },
+  {
+    "question": "Which planet has the most moons in the solar system?",
+    "options": ["Saturn", "Jupiter", "Uranus", "Mars"],
+    "answer": "Saturn",
+    "category": "Astronomy"
+  },
+  {
+    "question": "Which chemical is primarily responsible for acid rain?",
+    "options": ["Methane", "Carbon monoxide", "Sulfur dioxide", "Ozone"],
+    "answer": "Sulfur dioxide",
+    "category": "Earth Science"
+  }
+]

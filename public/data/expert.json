@@ -1,0 +1,394 @@
+[
+  {
+    "question": "What is the SI unit of force?",
+    "options": ["Watt", "Newton", "Joule", "Pascal"],
+    "answer": "Newton",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Physics"
+  },
+  {
+    "question": "Which economist is known for the 'Invisible Hand' theory?",
+    "options": ["John Maynard Keynes", "Karl Marx", "Adam Smith", "Milton Friedman"],
+    "answer": "Adam Smith",
+    "ageGroup": "Adults (18+)",
+    "category": "Economics",
+    "subcategory": "Macroeconomics"
+  },
+  {
+    "question": "In quantum mechanics, what principle states that the position and momentum of a particle cannot both be precisely measured simultaneously?",
+    "options": ["Pauli Exclusion Principle", "Heisenberg Uncertainty Principle", "Schrödinger's Cat", "Planck's Law"],
+    "answer": "Heisenberg Uncertainty Principle",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Quantum Physics"
+  },
+  {
+    "question": "Which country was the first to legalize same-sex marriage nationally?",
+    "options": ["Canada", "Netherlands", "Sweden", "Spain"],
+    "answer": "Netherlands",
+    "ageGroup": "Adults (18+)",
+    "category": "Current Affairs",
+    "subcategory": "Social Policy"
+  },
+  {
+    "question": "What is the primary function of the enzyme DNA polymerase?",
+    "options": ["Breaking down lipids", "Synthesizing DNA", "Transporting oxygen", "Catalyzing protein folding"],
+    "answer": "Synthesizing DNA",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Molecular Biology"
+  },
+  {
+    "question": "Which treaty ended the Thirty Years' War in 1648?",
+    "options": ["Treaty of Versailles", "Peace of Westphalia", "Treaty of Utrecht", "Congress of Vienna"],
+    "answer": "Peace of Westphalia",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "European History"
+  },
+  {
+    "question": "What is the term for the economic phenomenon where increased government spending leads to reduced private investment?",
+    "options": ["Crowding Out", "Liquidity Trap", "Pareto Efficiency", "Comparative Advantage"],
+    "answer": "Crowding Out",
+    "ageGroup": "Adults (18+)",
+    "category": "Economics",
+    "subcategory": "Fiscal Policy"
+  },
+  {
+    "question": "Which element has the highest atomic number of all naturally occurring elements?",
+    "options": ["Uranium (92)", "Plutonium (94)", "Thorium (90)", "Neptunium (93)"],
+    "answer": "Uranium (92)",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Chemistry"
+  },
+  {
+    "question": "Who authored the geopolitical theory known as the 'Clash of Civilizations'?",
+    "options": ["Francis Fukuyama", "Samuel Huntington", "Noam Chomsky", "Henry Kissinger"],
+    "answer": "Samuel Huntington",
+    "ageGroup": "Adults (18+)",
+    "category": "Politics",
+    "subcategory": "International Relations"
+  },
+  {
+    "question": "In computer science, what does the 'P' stand for in 'P vs NP problem'?",
+    "options": ["Polynomial", "Parallel", "Probabilistic", "Programmatic"],
+    "answer": "Polynomial",
+    "ageGroup": "Adults (18+)",
+    "category": "Technology",
+    "subcategory": "Computational Theory"
+  },
+  {
+    "question": "Which ancient civilization developed the concept of zero as a number?",
+    "options": ["Egyptians", "Greeks", "Mayans", "Indians"],
+    "answer": "Indians",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "Ancient Mathematics"
+  },
+  {
+    "question": "What is the name of the process by which plants convert light energy into chemical energy?",
+    "options": ["Respiration", "Photosynthesis", "Transpiration", "Fermentation"],
+    "answer": "Photosynthesis",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Botany"
+  },
+  {
+    "question": "Which U.S. Supreme Court case established the principle of judicial review?",
+    "options": ["Marbury v. Madison", "Brown v. Board of Education", "Roe v. Wade", "Dred Scott v. Sandford"],
+    "answer": "Marbury v. Madison",
+    "ageGroup": "Adults (18+)",
+    "category": "Politics",
+    "subcategory": "Constitutional Law"
+  },
+  {
+    "question": "What is the capital of Bhutan?",
+    "options": ["Kathmandu", "Thimphu", "Dhaka", "Colombo"],
+    "answer": "Thimphu",
+    "ageGroup": "Adults (18+)",
+    "category": "Geography",
+    "subcategory": "World Capitals"
+  },
+  {
+    "question": "Which neurotransmitter is primarily associated with reward and pleasure pathways in the brain?",
+    "options": ["Serotonin", "Dopamine", "Acetylcholine", "GABA"],
+    "answer": "Dopamine",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Neuroscience"
+  },
+  {
+    "question": "Who was the first female Prime Minister of the United Kingdom?",
+    "options": ["Theresa May", "Margaret Thatcher", "Angela Merkel", "Indira Gandhi"],
+    "answer": "Margaret Thatcher",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "Political Leaders"
+  },
+  {
+    "question": "In economics, what does the 'Gini coefficient' measure?",
+    "options": ["Inflation", "Income inequality", "GDP growth", "Unemployment"],
+    "answer": "Income inequality",
+    "ageGroup": "Adults (18+)",
+    "category": "Economics",
+    "subcategory": "Economic Indicators"
+  },
+  {
+    "question": "Which of these is NOT a fundamental force of nature?",
+    "options": ["Gravity", "Electromagnetism", "Strong Nuclear Force", "Centripetal Force"],
+    "answer": "Centripetal Force",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Physics"
+  },
+  {
+    "question": "What is the term for a market structure with a single seller and no close substitutes?",
+    "options": ["Oligopoly", "Monopoly", "Monopsony", "Perfect Competition"],
+    "answer": "Monopoly",
+    "ageGroup": "Adults (18+)",
+    "category": "Economics",
+    "subcategory": "Microeconomics"
+  },
+  {
+    "question": "Which ancient wonder was located in Alexandria, Egypt?",
+    "options": ["Colossus of Rhodes", "Hanging Gardens of Babylon", "Lighthouse of Alexandria", "Temple of Artemis"],
+    "answer": "Lighthouse of Alexandria",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "Ancient Wonders"
+  },
+  {
+    "question": "What is the main component of the Earth's core?",
+    "options": ["Nickel and Iron", "Silicon and Oxygen", "Magnesium and Aluminum", "Calcium and Carbon"],
+    "answer": "Nickel and Iron",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Geology"
+  },
+  {
+    "question": "Which country is the largest producer of coffee globally?",
+    "options": ["Colombia", "Vietnam", "Brazil", "Ethiopia"],
+    "answer": "Brazil",
+    "ageGroup": "Adults (18+)",
+    "category": "Current Affairs",
+    "subcategory": "Global Trade"
+  },
+  {
+    "question": "Who developed the first successful polio vaccine?",
+    "options": ["Louis Pasteur", "Jonas Salk", "Alexander Fleming", "Robert Koch"],
+    "answer": "Jonas Salk",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Medical History"
+  },
+  {
+    "question": "In the context of climate change, what does 'COP' stand for in 'COP26'?",
+    "options": ["Conference of Parties", "Climate Oversight Panel", "Carbon Offset Program", "Committee on Pollution"],
+    "answer": "Conference of Parties",
+    "ageGroup": "Adults (18+)",
+    "category": "Current Affairs",
+    "subcategory": "Environmental Policy"
+  },
+  {
+    "question": "Which philosopher wrote 'Thus Spoke Zarathustra'?",
+    "options": ["Friedrich Nietzsche", "Immanuel Kant", "Jean-Paul Sartre", "Søren Kierkegaard"],
+    "answer": "Friedrich Nietzsche",
+    "ageGroup": "Adults (18+)",
+    "category": "Literature",
+    "subcategory": "Philosophy"
+  },
+  {
+    "question": "What is the term for the process by which a star exhausts its nuclear fuel and collapses under gravity?",
+    "options": ["Supernova", "Black Hole Formation", "Nebular Hypothesis", "Stellar Nucleosynthesis"],
+    "answer": "Supernova",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Astrophysics"
+  },
+  {
+    "question": "Which country was NOT part of the Axis Powers in World War II?",
+    "options": ["Italy", "Japan", "Germany", "Soviet Union"],
+    "answer": "Soviet Union",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "World War II"
+  },
+  {
+    "question": "What is the name of the algorithm used for secure data transmission over the internet?",
+    "options": ["RSA", "AES", "SSL/TLS", "SHA-256"],
+    "answer": "SSL/TLS",
+    "ageGroup": "Adults (18+)",
+    "category": "Technology",
+    "subcategory": "Cybersecurity"
+  },
+  {
+    "question": "Which African country was formerly known as Abyssinia?",
+    "options": ["Ethiopia", "Sudan", "Somalia", "Kenya"],
+    "answer": "Ethiopia",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "Colonialism"
+  },
+  {
+    "question": "What is the primary function of the World Trade Organization (WTO)?",
+    "options": ["Regulate global financial markets", "Enforce international labor laws", "Facilitate free trade agreements", "Coordinate humanitarian aid"],
+    "answer": "Facilitate free trade agreements",
+    "ageGroup": "Adults (18+)",
+    "category": "Economics",
+    "subcategory": "International Trade"
+  },
+  {
+    "question": "Which gas is responsible for the orange color of Mars' sky?",
+    "options": ["Methane", "Carbon Dioxide", "Nitrogen", "Iron Oxide (Rust)"],
+    "answer": "Iron Oxide (Rust)",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Astronomy"
+  },
+  {
+    "question": "Who was the first Secretary-General of the United Nations?",
+    "options": ["Dag Hammarskjöld", "Trygve Lie", "Kofi Annan", "U Thant"],
+    "answer": "Trygve Lie",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "International Organizations"
+  },
+  {
+    "question": "In genetics, what does 'CRISPR' stand for?",
+    "options": ["Clustered Regulatory Interspaced Short Palindromic Repeats", "Cellular RNA Interference Sequencing Process", "Chromosomal Replication and Insertion System", "Coding Region Identification and Splicing Protocol"],
+    "answer": "Clustered Regulatory Interspaced Short Palindromic Repeats",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Biotechnology"
+  },
+  {
+    "question": "Which U.S. president signed the Civil Rights Act of 1964 into law?",
+    "options": ["John F. Kennedy", "Lyndon B. Johnson", "Richard Nixon", "Dwight D. Eisenhower"],
+    "answer": "Lyndon B. Johnson",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "American History"
+  },
+  {
+    "question": "What is the term for the theoretical boundary around a black hole beyond which nothing can escape?",
+    "options": ["Schwarzschild Radius", "Event Horizon", "Singularity", "Photon Sphere"],
+    "answer": "Event Horizon",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Astrophysics"
+  },
+  {
+    "question": "Which country is the world's largest democracy by population?",
+    "options": ["United States", "Indonesia", "India", "Brazil"],
+    "answer": "India",
+    "ageGroup": "Adults (18+)",
+    "category": "Current Affairs",
+    "subcategory": "Global Politics"
+  },
+  {
+    "question": "What is the name of the treaty that established the European Union?",
+    "options": ["Treaty of Rome", "Maastricht Treaty", "Treaty of Lisbon", "Treaty of Versailles"],
+    "answer": "Maastricht Treaty",
+    "ageGroup": "Adults (18+)",
+    "category": "Politics",
+    "subcategory": "European Union"
+  },
+  {
+    "question": "Which scientist proposed the theory of continental drift?",
+    "options": ["Charles Darwin", "Alfred Wegener", "Isaac Newton", "James Hutton"],
+    "answer": "Alfred Wegener",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Geology"
+  },
+  {
+    "question": "In finance, what does 'LIBOR' stand for?",
+    "options": ["London Interbank Offered Rate", "Liquidity Index Benchmark of Returns", "Loan Interest and Borrowing Oversight Rate", "Lending International Banking Official Rate"],
+    "answer": "London Interbank Offered Rate",
+    "ageGroup": "Adults (18+)",
+    "category": "Economics",
+    "subcategory": "Financial Markets"
+  },
+  {
+    "question": "Which ancient language is the ancestor of most modern European languages?",
+    "options": ["Latin", "Sanskrit", "Proto-Indo-European", "Ancient Greek"],
+    "answer": "Proto-Indo-European",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "Linguistics"
+  },
+  {
+    "question": "What is the term for the phenomenon where light bends as it passes through a gravitational field?",
+    "options": ["Doppler Effect", "Gravitational Lensing", "Quantum Entanglement", "Photoelectric Effect"],
+    "answer": "Gravitational Lensing",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Astrophysics"
+  },
+  {
+    "question": "Which country was the first to adopt a digital currency as legal tender?",
+    "options": ["China", "Sweden", "El Salvador", "Bahamas"],
+    "answer": "El Salvador",
+    "ageGroup": "Adults (18+)",
+    "category": "Current Affairs",
+    "subcategory": "Financial Technology"
+  },
+  {
+    "question": "Who is considered the father of modern computer science?",
+    "options": ["Alan Turing", "Bill Gates", "Charles Babbage", "John von Neumann"],
+    "answer": "Alan Turing",
+    "ageGroup": "Adults (18+)",
+    "category": "Technology",
+    "subcategory": "Computer Science"
+  },
+  {
+    "question": "Which war was triggered by the assassination of Archduke Franz Ferdinand?",
+    "options": ["World War I", "World War II", "Napoleonic Wars", "Crimean War"],
+    "answer": "World War I",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "20th Century Wars"
+  },
+  {
+    "question": "What is the name of the theoretical framework that unifies general relativity and quantum mechanics?",
+    "options": ["String Theory", "Theory of Everything", "Grand Unified Theory", "M-Theory"],
+    "answer": "String Theory",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Theoretical Physics"
+  },
+  {
+    "question": "Which country has the oldest written constitution still in use?",
+    "options": ["United Kingdom", "United States", "France", "Switzerland"],
+    "answer": "United States",
+    "ageGroup": "Adults (18+)",
+    "category": "History",
+    "subcategory": "Constitutional Law"
+  },
+  {
+    "question": "In economics, what is the 'Laffer Curve' used to illustrate?",
+    "options": ["The relationship between inflation and unemployment", "The optimal tax rate for maximizing revenue", "The diminishing returns of capital investment", "The Pareto distribution of wealth"],
+    "answer": "The optimal tax rate for maximizing revenue",
+    "ageGroup": "Adults (18+)",
+    "category": "Economics",
+    "subcategory": "Tax Policy"
+  },
+  {
+    "question": "Which element is liquid at room temperature?",
+    "options": ["Bromine", "Mercury", "Gallium", "All of the above"],
+    "answer": "All of the above",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Chemistry"
+  },
+  {
+    "question": "Who was the first female scientist to win a Nobel Prize?",
+    "options": ["Marie Curie", "Rosalind Franklin", "Dorothy Hodgkin", "Barbara McClintock"],
+    "answer": "Marie Curie",
+    "ageGroup": "Adults (18+)",
+    "category": "Science",
+    "subcategory": "Scientific Achievements"
+  }
+]

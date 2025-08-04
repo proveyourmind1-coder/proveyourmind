@@ -1,0 +1,410 @@
+[
+  {
+    "question": "What does CPU stand for?",
+    "options": ["Central Processing Unit", "Control Panel Unit", "Computer Power Unit", "Central Performance Unit"],
+    "answer": "Central Processing Unit",
+    "ageGroup": "Teens (11–18)",
+    "category": "Technology",
+    "subcategory": "Computing"
+  },
+  {
+    "question": "Which planet is known for its prominent ring system?",
+    "options": ["Mars", "Jupiter", "Saturn", "Venus"],
+    "answer": "Saturn",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Astronomy"
+  },
+  {
+    "question": "Who wrote the play 'Romeo and Juliet'?",
+    "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+    "answer": "William Shakespeare",
+    "ageGroup": "Teens (11–18)",
+    "category": "Literature",
+    "subcategory": "Classic Literature"
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Go", "Gd", "Au", "Ag"],
+    "answer": "Au",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Chemistry"
+  },
+  {
+    "question": "Which country was the first to land a human on the moon?",
+    "options": ["Russia", "China", "USA", "India"],
+    "answer": "USA",
+    "ageGroup": "Teens (11–18)",
+    "category": "History",
+    "subcategory": "Space Exploration"
+  },
+  {
+    "question": "What is the largest organ in the human body?",
+    "options": ["Liver", "Heart", "Skin", "Brain"],
+    "answer": "Skin",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Biology"
+  },
+  {
+    "question": "In which year did World War II end?",
+    "options": ["1943", "1945", "1947", "1950"],
+    "answer": "1945",
+    "ageGroup": "Teens (11–18)",
+    "category": "History",
+    "subcategory": "World War II"
+  },
+  {
+    "question": "What is the main component of the Sun?",
+    "options": ["Liquid Lava", "Hydrogen", "Oxygen", "Carbon"],
+    "answer": "Hydrogen",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Astronomy"
+  },
+  {
+    "question": "Which programming language is known for its use in web development?",
+    "options": ["Python", "Java", "HTML", "C++"],
+    "answer": "HTML",
+    "ageGroup": "Teens (11–18)",
+    "category": "Technology",
+    "subcategory": "Programming"
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+    "answer": "Leonardo da Vinci",
+    "ageGroup": "Teens (11–18)",
+    "category": "History",
+    "subcategory": "Art"
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?",
+    "options": ["Gold", "Iron", "Diamond", "Quartz"],
+    "answer": "Diamond",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Geology"
+  },
+  {
+    "question": "Which of these is a prime number?",
+    "options": ["9", "15", "21", "17"],
+    "answer": "17",
+    "ageGroup": "Teens (11–18)",
+    "category": "Mathematics",
+    "subcategory": "Number Theory"
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "options": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
+    "answer": "Tokyo",
+    "ageGroup": "Teens (11–18)",
+    "category": "Geography",
+    "subcategory": "World Capitals"
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "options": ["Marie Curie", "Alexander Fleming", "Isaac Newton", "Albert Einstein"],
+    "answer": "Alexander Fleming",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Biology"
+  },
+  {
+    "question": "Which of these is NOT a type of cloud computing service?",
+    "options": ["IaaS", "PaaS", "SaaS", "MaaS"],
+    "answer": "MaaS",
+    "ageGroup": "Teens (11–18)",
+    "category": "Technology",
+    "subcategory": "Computing"
+  },
+  {
+    "question": "What is the largest ocean on Earth?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "answer": "Pacific Ocean",
+    "ageGroup": "Teens (11–18)",
+    "category": "Geography",
+    "subcategory": "Oceans"
+  },
+  {
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Nitrogen",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Earth Science"
+  },
+  {
+    "question": "Who was the first woman to win a Nobel Prize?",
+    "options": ["Marie Curie", "Rosalind Franklin", "Jane Goodall", "Dorothy Hodgkin"],
+    "answer": "Marie Curie",
+    "ageGroup": "Teens (11–18)",
+    "category": "History",
+    "subcategory": "Science History"
+  },
+  {
+    "question": "What is the smallest bone in the human body?",
+    "options": ["Femur", "Stapes", "Tibia", "Humerus"],
+    "answer": "Stapes",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Biology"
+  },
+  {
+    "question": "Which ancient civilization built the pyramids?",
+    "options": ["Greeks", "Romans", "Egyptians", "Mayans"],
+    "answer": "Egyptians",
+    "ageGroup": "Teens (11–18)",
+    "category": "History",
+    "subcategory": "Ancient History"
+  },
+  {
+    "question": "What is the speed of light in a vacuum (approximately)?",
+    "options": ["300,000 km/s", "150,000 km/s", "500,000 km/s", "1,000,000 km/s"],
+    "answer": "300,000 km/s",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Physics"
+  },
+  {
+    "question": "Which of these is a programming paradigm?",
+    "options": ["Object-Oriented", "Binary", "Hexadecimal", "Algorithmic"],
+    "answer": "Object-Oriented",
+    "ageGroup": "Teens (11–18)",
+    "category": "Technology",
+    "subcategory": "Programming"
+  },
+  {
+    "question": "Who is the author of '1984'?",
+    "options": ["George Orwell", "Aldous Huxley", "Ray Bradbury", "J.K. Rowling"],
+    "answer": "George Orwell",
+    "ageGroup": "Teens (11–18)",
+    "category": "Literature",
+    "subcategory": "Classic Literature"
+  },
+  {
+    "question": "Which war was fought between the North and South regions of the United States?",
+    "options": ["World War I", "American Revolution", "Civil War", "Vietnam War"],
+    "answer": "Civil War",
+    "ageGroup": "Teens (11–18)",
+    "category": "History",
+    "subcategory": "American History"
+  },
+  {
+    "question": "What is the pH value of pure water?",
+    "options": ["5", "7", "9", "12"],
+    "answer": "7",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Chemistry"
+  },
+  {
+    "question": "Which planet is the hottest in our solar system?",
+    "options": ["Mercury", "Venus", "Mars", "Jupiter"],
+    "answer": "Venus",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Astronomy"
+  },
+  {
+    "question": "What is the largest desert in the world?",
+    "options": ["Sahara", "Gobi", "Antarctica", "Arabian"],
+    "answer": "Antarctica",
+    "ageGroup": "Teens (11–18)",
+    "category": "Geography",
+    "subcategory": "Deserts"
+  },
+  {
+    "question": "Which scientist formulated the theory of relativity?",
+    "options": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Galileo Galilei"],
+    "answer": "Albert Einstein",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Physics"
+  },
+  {
+    "question": "What is the main function of the mitochondria in a cell?",
+    "options": ["Protein Synthesis", "Energy Production", "Waste Removal", "DNA Storage"],
+    "answer": "Energy Production",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Biology"
+  },
+  {
+    "question": "Which of these is a data structure?",
+    "options": ["Loop", "Array", "Function", "Variable"],
+    "answer": "Array",
+    "ageGroup": "Teens (11–18)",
+    "category": "Technology",
+    "subcategory": "Programming"
+  },
+  {
+    "question": "Who was the first president of the United States?",
+    "options": ["Thomas Jefferson", "Abraham Lincoln", "George Washington", "John Adams"],
+    "answer": "George Washington",
+    "ageGroup": "Teens (11–18)",
+    "category": "History",
+    "subcategory": "American History"
+  },
+  {
+    "question": "What is the largest mammal in the world?",
+    "options": ["Elephant", "Blue Whale", "Giraffe", "Polar Bear"],
+    "answer": "Blue Whale",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Biology"
+  },
+  {
+    "question": "Which of these is NOT a type of rock?",
+    "options": ["Igneous", "Sedimentary", "Metamorphic", "Luminous"],
+    "answer": "Luminous",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Geology"
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "answer": "Canberra",
+    "ageGroup": "Teens (11–18)",
+    "category": "Geography",
+    "subcategory": "World Capitals"
+  },
+  {
+    "question": "Which of these elements is a noble gas?",
+    "options": ["Oxygen", "Helium", "Chlorine", "Sodium"],
+    "answer": "Helium",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Chemistry"
+  },
+  {
+    "question": "Who wrote 'The Great Gatsby'?",
+    "options": ["Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain", "John Steinbeck"],
+    "answer": "F. Scott Fitzgerald",
+    "ageGroup": "Teens (11–18)",
+    "category": "Literature",
+    "subcategory": "Classic Literature"
+  },
+  {
+    "question": "What is the study of fossils called?",
+    "options": ["Paleontology", "Archaeology", "Geology", "Anthropology"],
+    "answer": "Paleontology",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Earth Science"
+  },
+  {
+    "question": "Which of these is a sorting algorithm?",
+    "options": ["Binary Search", "Bubble Sort", "Depth-First Search", "Dijkstra's Algorithm"],
+    "answer": "Bubble Sort",
+    "ageGroup": "Teens (11–18)",
+    "category": "Technology",
+    "subcategory": "Programming"
+  },
+  {
+    "question": "Which country is home to the kangaroo?",
+    "options": ["South Africa", "Brazil", "Australia", "New Zealand"],
+    "answer": "Australia",
+    "ageGroup": "Teens (11–18)",
+    "category": "Geography",
+    "subcategory": "Wildlife"
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Saturn", "Jupiter", "Neptune"],
+    "answer": "Jupiter",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Astronomy"
+  },
+  {
+    "question": "Which of these is a type of computer virus?",
+    "options": ["Trojan", "Firewall", "Router", "Cache"],
+    "answer": "Trojan",
+    "ageGroup": "Teens (11–18)",
+    "category": "Technology",
+    "subcategory": "Cybersecurity"
+  },
+  {
+    "question": "Who was the first person to step on the moon?",
+    "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
+    "answer": "Neil Armstrong",
+    "ageGroup": "Teens (11–18)",
+    "category": "History",
+    "subcategory": "Space Exploration"
+  },
+  {
+    "question": "What is the chemical formula for water?",
+    "options": ["CO2", "H2O", "NaCl", "O2"],
+    "answer": "H2O",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Chemistry"
+  },
+  {
+    "question": "Which of these is a type of network topology?",
+    "options": ["Star", "Cube", "Pyramid", "Sphere"],
+    "answer": "Star",
+    "ageGroup": "Teens (11–18)",
+    "category": "Technology",
+    "subcategory": "Networking"
+  },
+  {
+    "question": "Who painted 'The Starry Night'?",
+    "options": ["Pablo Picasso", "Vincent van Gogh", "Claude Monet", "Salvador Dalí"],
+    "answer": "Vincent van Gogh",
+    "ageGroup": "Teens (11–18)",
+    "category": "History",
+    "subcategory": "Art"
+  },
+  {
+    "question": "What is the capital of Canada?",
+    "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "answer": "Ottawa",
+    "ageGroup": "Teens (11–18)",
+    "category": "Geography",
+    "subcategory": "World Capitals"
+  },
+  {
+    "question": "Which of these is a type of renewable energy?",
+    "options": ["Coal", "Natural Gas", "Solar", "Nuclear"],
+    "answer": "Solar",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Environmental Science"
+  },
+  {
+    "question": "What is the main component of natural gas?",
+    "options": ["Methane", "Carbon Dioxide", "Oxygen", "Nitrogen"],
+    "answer": "Methane",
+    "ageGroup": "Teens (11–18)",
+    "category": "Science",
+    "subcategory": "Chemistry"
+  },
+  {
+    "question": "Which of these is a famous Greek philosopher?",
+    "options": ["Socrates", "Julius Caesar", "Napoleon", "Confucius"],
+    "answer": "Socrates",
+    "ageGroup": "Teens (11–18)",
+    "category": "History",
+    "subcategory": "Ancient History"
+  },
+  {
+    "question": "What is the largest continent by area?",
+    "options": ["Africa", "North America", "Asia", "Europe"],
+    "answer": "Asia",
+    "ageGroup": "Teens (11–18)",
+    "category": "Geography",
+    "subcategory": "Continents"
+  },
+  {
+    "question": "Which of these is a type of AI model?",
+    "options": ["Neural Network", "Binary Tree", "Linked List", "Hash Table"],
+    "answer": "Neural Network",
+    "ageGroup": "Teens (11–18)",
+    "category": "Technology",
+    "subcategory": "Artificial Intelligence"
+  }
+]
