@@ -1,3 +1,4 @@
+// ✅ Dynamic route for quiz page by difficulty
 import { generateQuestions } from "@/lib/question-generator"
 import QuizPageClient from "@/components/QuizPage/QuizPageClient"
 import { saveQuizAttempt, getPaymentRecord } from "@/lib/firestore"
@@ -8,7 +9,7 @@ interface Props {
 }
 
 export default async function QuizPage({ params, searchParams }: Props) {
-  const difficultyParam = params?.difficulty || "easy"
+  const difficultyParam = params?.difficulty || "easy" // ✅ FIXED
   const difficulty = decodeURIComponent(difficultyParam).toLowerCase() as
     | "easy"
     | "medium"
@@ -23,7 +24,6 @@ export default async function QuizPage({ params, searchParams }: Props) {
 
   try {
     const questions = await generateQuestions(difficulty)
-
     console.log("📦 Loaded questions:", questions?.length)
 
     if (!questions || questions.length === 0) {
@@ -69,7 +69,7 @@ export default async function QuizPage({ params, searchParams }: Props) {
   }
 }
 
-// ✅ Get UID from Razorpay payment record
+// ✅ Get UID from Razorpay payment record in Firestore
 async function getUidFromPayment(paymentId: string): Promise<string | null> {
   try {
     const record = await getPaymentRecord(paymentId)
