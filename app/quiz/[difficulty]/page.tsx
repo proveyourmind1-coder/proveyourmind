@@ -1,17 +1,17 @@
-// ✅ Dynamic route for quiz page by difficulty
-import type { PageProps } from "next"
 import { generateQuestions } from "@/lib/question-generator"
 import QuizPageClient from "@/components/QuizPage/QuizPageClient"
-import { saveQuizAttempt, getPaymentRecord } from "@/lib/firestore" // ✅ Correct import
+import { saveQuizAttempt, getPaymentRecord } from "@/lib/firestore"
+import type { Metadata } from "next"
 
-interface Props extends PageProps {
+// ✅ Next.js dynamic route props
+interface PageProps {
   params: { difficulty: string }
   searchParams?: { paymentId?: string; amount?: string }
 }
 
-export default async function QuizPage({ params, searchParams }: Props) {
-  const difficultyParam = params?.difficulty || "easy"
-  const difficulty = decodeURIComponent(difficultyParam).toLowerCase() as
+// ✅ Main quiz page entry
+export default async function Page({ params, searchParams }: PageProps) {
+  const difficulty = decodeURIComponent(params.difficulty || "easy").toLowerCase() as
     | "easy"
     | "medium"
     | "hard"
@@ -20,15 +20,14 @@ export default async function QuizPage({ params, searchParams }: Props) {
   const paymentId = searchParams?.paymentId || null
   const amount = searchParams?.amount ? parseInt(searchParams.amount) : undefined
 
-  console.log("🔍 Loading questions for difficulty:", difficulty)
+  console.log("🔍 Loading questions for:", difficulty)
   if (paymentId) console.log("💸 Razorpay Payment ID:", paymentId)
 
   try {
     const questions = await generateQuestions(difficulty)
-    console.log("📦 Loaded questions:", questions?.length)
 
     if (!questions || questions.length === 0) {
-      throw new Error("No questions found for: " + difficulty)
+      throw new Error("No questions found")
     }
 
     return (
@@ -39,9 +38,8 @@ export default async function QuizPage({ params, searchParams }: Props) {
       />
     )
   } catch (error) {
-    console.error("🚨 Question generation failed:", error)
+    console.error("🚨 Failed to load questions:", error)
 
-    // ✅ Log failed attempt for refund tracking
     if (paymentId && typeof window === "undefined") {
       const uid = await getUidFromPayment(paymentId)
       if (uid) {
@@ -54,30 +52,25 @@ export default async function QuizPage({ params, searchParams }: Props) {
           transactionId: paymentId,
           success: false,
         })
-        console.log("⚠️ Failed quiz attempt saved for refund tracking")
-      } else {
-        console.warn("⚠️ Could not find UID for payment ID:", paymentId)
       }
     }
 
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen text-red-600 text-center p-4">
-        <h1 className="text-2xl font-bold mb-4">❌ Failed to load questions</h1>
-        <p className="text-sm">
-          Please check if questions are available for <strong>{difficulty}</strong> difficulty.
-        </p>
+      <div className="min-h-screen flex flex-col items-center justify-center text-center text-red-600 p-4">
+        <h1 className="text-2xl font-bold mb-2">❌ Failed to load questions</h1>
+        <p>Please check if the selected quiz is available or try again later.</p>
       </div>
     )
   }
 }
 
-// ✅ Get UID from Razorpay payment record in Firestore
+// ✅ Helper: Get UID from payment record
 async function getUidFromPayment(paymentId: string): Promise<string | null> {
   try {
     const record = await getPaymentRecord(paymentId)
     return record?.uid || null
-  } catch (err) {
-    console.error("❌ Failed to get UID from payment:", err)
+  } catch (error) {
+    console.error("❌ Error fetching UID from payment:", error)
     return null
   }
 }
