@@ -1,15 +1,16 @@
 // ✅ Dynamic route for quiz page by difficulty
+import type { PageProps } from "next"
 import { generateQuestions } from "@/lib/question-generator"
 import QuizPageClient from "@/components/QuizPage/QuizPageClient"
-import { saveQuizAttempt, getPaymentRecord } from "@/lib/firestore"
+import { saveQuizAttempt, getPaymentRecord } from "@/lib/firestore" // ✅ Correct import
 
-interface Props {
+interface Props extends PageProps {
   params: { difficulty: string }
   searchParams?: { paymentId?: string; amount?: string }
 }
 
 export default async function QuizPage({ params, searchParams }: Props) {
-  const difficultyParam = params?.difficulty || "easy" // ✅ FIXED
+  const difficultyParam = params?.difficulty || "easy"
   const difficulty = decodeURIComponent(difficultyParam).toLowerCase() as
     | "easy"
     | "medium"
@@ -24,7 +25,6 @@ export default async function QuizPage({ params, searchParams }: Props) {
 
   try {
     const questions = await generateQuestions(difficulty)
-
     console.log("📦 Loaded questions:", questions?.length)
 
     if (!questions || questions.length === 0) {
