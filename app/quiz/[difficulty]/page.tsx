@@ -1,7 +1,7 @@
 // ✅ Dynamic route for quiz page by difficulty
 import { generateQuestions } from "@/lib/question-generator"
 import QuizPageClient from "@/components/QuizPage/QuizPageClient"
-import { saveQuizAttempt } from "@/firebase/firestore"
+import { saveQuizAttempt, getPaymentRecord } from "@/lib/firestore" // ✅ Correct import
 
 interface Props {
   params: { difficulty: string }
@@ -41,9 +41,9 @@ export default async function QuizPage({ params, searchParams }: Props) {
   } catch (error) {
     console.error("🚨 Question generation failed:", error)
 
-    // ✅ If paymentId is present, log failed attempt to Firestore
+    // ✅ Log failed attempt for refund tracking
     if (paymentId && typeof window === "undefined") {
-      const uid = await getUidFromPayment(paymentId) // 🔍 We'll explain this below 👇
+      const uid = await getUidFromPayment(paymentId)
       if (uid) {
         await saveQuizAttempt({
           uid,
@@ -68,5 +68,16 @@ export default async function QuizPage({ params, searchParams }: Props) {
         </p>
       </div>
     )
+  }
+}
+
+// ✅ Get UID from Razorpay payment record in Firestore
+async function getUidFromPayment(paymentId: string): Promise<string | null> {
+  try {
+    const record = await getPaymentRecord(paymentId)
+    return record?.uid || null
+  } catch (err) {
+    console.error("❌ Failed to get UID from payment:", err)
+    return null
   }
 }
