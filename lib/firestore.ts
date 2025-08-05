@@ -283,3 +283,15 @@ export async function refundQuizPayment(attemptId: string): Promise<void> {
     }
   }
 }
+
+// ✅ Get Payment Record by ID
+export async function getPaymentRecord(paymentId: string): Promise<any | null> {
+  try {
+    const docRef = doc(db, "paymentRecords", paymentId)
+    const docSnap = await getDoc(docRef)
+    return docSnap.exists() ? docSnap.data() : null
+  } catch (error) {
+    console.error("❌ Error fetching payment record:", error)
+    return null
+  }
+}
