@@ -9,6 +9,8 @@ interface Props {
 }
 
 export default async function QuizPage({ params, searchParams }: Props) {
+  console.log("✅ LIVE TEST BUILD at", new Date().toISOString()) // ✅ REMOVE after testing if needed
+
   const difficultyParam = await Promise.resolve(params?.difficulty || "easy")
   const difficulty = decodeURIComponent(difficultyParam).toLowerCase() as
     | "easy"
@@ -81,4 +83,3 @@ async function getUidFromPayment(paymentId: string): Promise<string | null> {
     return null
   }
 }
-  
