@@ -24,6 +24,7 @@ export default async function QuizPage({ params, searchParams }: Props) {
 
   try {
     const questions = await generateQuestions(difficulty)
+
     console.log("📦 Loaded questions:", questions?.length)
 
     if (!questions || questions.length === 0) {
@@ -40,6 +41,7 @@ export default async function QuizPage({ params, searchParams }: Props) {
   } catch (error) {
     console.error("🚨 Question generation failed:", error)
 
+    // ✅ Log failed attempt for refund tracking
     if (paymentId && typeof window === "undefined") {
       const uid = await getUidFromPayment(paymentId)
       if (uid) {
