@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Loader2 } from "lucide-react"
-import { getWalletBalance, deductFromWallet } from "@/firebase/firestore"
+import { getWalletBalance, deductFromWallet } from "@/lib/firestore" // ✅ FIXED PATH
 
 interface Tournament {
   id: string
@@ -56,17 +56,14 @@ export default function TournamentDetailsPage() {
     setJoining(true)
 
     try {
-      // ✅ Check wallet
       const balance = await getWalletBalance(user.uid)
       if (balance < tournament.entryFee) {
         alert("❌ Not enough balance in wallet. Please top-up.")
         return
       }
 
-      // ✅ Deduct entry fee
       await deductFromWallet(user.uid, tournament.entryFee)
 
-      // ✅ Add user to participants
       const ref = doc(db, "tournaments", tournament.id)
       await updateDoc(ref, {
         participants: arrayUnion(user.uid),
